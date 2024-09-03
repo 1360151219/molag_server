@@ -13,7 +13,6 @@ RUN npm install --only=production
 # 安装 nest CLI 工具（确保它作为项目依赖被安装）  
 RUN npm install @nestjs/cli -g
 
-# 复制所有文件到容器中
 COPY . .
 
 # 构建应用程序
